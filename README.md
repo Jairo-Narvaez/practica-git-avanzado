@@ -100,5 +100,10 @@ Ejecuta git reflog. En tu README.md, en una sección
 "Investigación adicional", explica en 2-3 líneas qué información 
 muestra este comando.
 
+# git reflog.
+Muestra el historial de movimientos de la referencia HEAD en tu repositorio. Es decir, te enseña todos los cambios de posición que ha tenido tu rama actual: commits, resets, merges, rebases, checkouts, etc.
+
 ## ✅ Entrega
 Link de tu repositorio (fork) + pantallazo de "git log --oneline"
+
+
