@@ -107,3 +107,31 @@ Muestra el historial de movimientos de la referencia HEAD en tu repositorio. Es 
 Link de tu repositorio (fork) + pantallazo de "git log --oneline"
 
 
+## 📌 Semantic Versioning (SemVer)
+
+**Semantic Versioning (SemVer)** es un sistema de numeración de versiones que sigue el formato:
+
+
+### 🔢 Estructura
+- **MAJOR (X):** cambios incompatibles en la API → `2.4.1` → `3.0.0`
+- **MINOR (Y):** nuevas funcionalidades compatibles → `2.4.1` → `2.5.0`
+- **PATCH (Z):** correcciones de errores compatibles → `2.4.1` → `2.4.2`
+
+### 🏷️ Etiquetas adicionales
+- **Pre-release:** `1.0.0-beta`, `2.0.0-rc.1`
+- **Metadata de compilación:** `1.0.0+build.123`
+
+### 🎯 Ventajas
+- Claridad en el impacto de los cambios  
+- Compatibilidad entre dependencias  
+- Estandarización en proyectos open source  
+- Mejor gestión de versiones y librerías  
+
+### 📊 Ejemplo
+| Versión | Cambio realizado | Compatibilidad |
+|---------|-----------------|----------------|
+| `1.2.3` → `1.2.4` | Corrección de bug | Compatible |
+| `1.2.3` → `1.3.0` | Nueva función | Compatible |
+| `1.2.3` → `2.0.0` | Cambio en API | Incompatible |
+
+---
