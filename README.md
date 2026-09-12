@@ -7,6 +7,9 @@ para practicar comandos avanzados de Git.
 - Sumar
 - Restar
 - Multiplicar
+-dividir
+-potencia
+-raiz cuadrada
 
 ## 📝 Cómo ejecutar
 ```
@@ -135,3 +138,36 @@ Link de tu repositorio (fork) + pantallazo de "git log --oneline"
 | `1.2.3` → `2.0.0` | Cambio en API | Incompatible |
 
 ---
+
+## Lista de comandos con git stash
+Los comandos de git stash sirven para guardar, listar, aplicar y administrar cambios temporales 
+en el repositorio. Es como tener un `cajon` donde puedes meter tus modificaciones sin tener que hacer un commit
+y luego recuperarlas cuando quieras.
+
+## Lista de comandos
+- **git stash** Sirve para guardar los cambios sin tener que hacer un commit y limpia el direcctorio
+- **git stash save "Mensaje"** Sirve para guardar los cambios y agrega un mensaje.
+- **git stash list** Muestra todos los stashes guardados
+- **git stash show stash@{n}** Muestra los cambios aplicados a un stash especifico.
+- **git stash apply stash@{n}** Aplica un stash especifico sin necesidad de eliminarlo de la lista
+- **git stash pop stash@{n}** Aplica un stash y lo elimina de la lista
+- **git stash drop stash@{n}** Elimina un stash sin aplicarlo
+- **git stash clear** Elimina todos los stashes guardados
+- **git stash branch nombre-rama stash@{n}** Crea una rama nueva con el contenido del stash
+
+En resumen los comandos git stash sirven para pausar o reanudar el trabajo sin necesidad de ensuciar
+el historial de commits.
+
+## Usos del comando git tag
+- **git tag** Se usa para crear etiquetas en el historial de commits de git.
+Las etiquetas son como marcadores que señalan un commit importante, normalmente para 
+identificar versiones de lanzamiento.
+- git tag
+- git show V1.0.0 Ver detalles de una etiqueta.
+- git tag v1.1.0 mensaje123 crea etiqueta en un commit especifico
+- git push origin v1.0.0 o git push origin --tags Envia etiquetas al remoto
+- git tag -d v1.0.0 Eliminar etiqueta
+
+En resumen git tag sirve para marcar commits importantes, normalmente versiones 
+y facilita el control de lanzamiento de proyectos.
+ 
